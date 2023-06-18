@@ -1,7 +1,7 @@
-const Painting = ({ url, title, authorName, profileUser, price, qty })=> {
+const Painting = ({ imgUrl, title, authorName ='noname', profileUser, price, qty })=> {
   return (
     <div>
-      <img src={url} alt={title} with="480" />
+      <img src={imgUrl} alt={title} with="480" />
       <h2>{title}</h2>
       <p>
         Autor: <a href={profileUser}>{authorName}</a>
