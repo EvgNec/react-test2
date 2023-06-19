@@ -29,10 +29,10 @@ const Painting = ({
 export default Painting;
 
 Painting.propTypes = {
-    imgUrl: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-    profileUser: PropTypes.string.isRequired,
-        authorName: PropTypes.string.isRequired,
-    price: PropTypes.number.isRequired,
-    qty: PropTypes.number.isRequired,
+  imgUrl: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  profileUser: PropTypes.string.isRequired,
+  authorName: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
+  qty: PropTypes.number.isRequired,
 };

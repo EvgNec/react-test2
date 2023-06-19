@@ -1,4 +1,6 @@
+import PropTypes from 'prop-types';
 import Painting from './Painting';
+
 function PaintingList({ items }) {
   return <ul>
     {items.map(painting => (
@@ -17,3 +19,10 @@ function PaintingList({ items }) {
 }
 
 export default PaintingList;
+
+
+PaintingList.propTypes = {
+    items: PropTypes.arrayOf(PropTypes.shape({
+       id: PropTypes.string.isRequired, 
+    }))
+};
