@@ -1,4 +1,15 @@
-const Painting = ({ imgUrl, title, authorName ='noname', profileUser, price, qty })=> {
+import PropTypes from 'prop-types'
+import defaultImage from '../default.jpg'
+
+
+const Painting = ({
+  imgUrl =defaultImage,
+  title,
+  authorName = 'noname',
+  profileUser,
+  price,
+  qty,
+}) => {
   return (
     <div>
       <img src={imgUrl} alt={title} with="480" />
@@ -7,10 +18,14 @@ const Painting = ({ imgUrl, title, authorName ='noname', profileUser, price, qty
         Autor: <a href={profileUser}>{authorName}</a>
       </p>
       <p>Price: {price} $</p>
-      <p> QTY: {qty}</p>
+          <p> Доступность: {qty < 10 ? 'end' : 'start'} {qty}</p>
       <button type="button">Add bascet</button>
     </div>
   );
-}
+};
 
 export default Painting;
+
+Painting.propTypes = {
+    imgUrl: PropTypes.string,
+}

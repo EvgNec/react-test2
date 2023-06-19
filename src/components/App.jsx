@@ -6,7 +6,7 @@ export const App = () => {
   return (
     <div>
         <Painting
-    url={paintings[0].url}
+    imgUrl={paintings[0].url}
     title={paintings[0].title}
     authorName={paintings[0].author.tag}
     profileUser={paintings[0].author.url}
@@ -14,7 +14,7 @@ export const App = () => {
     qty={paintings[0].quantity}
       />
               <Painting
-    url={paintings[1].url}
+    imgUrl={paintings[1].url}
     title={paintings[1].title}
     authorName={paintings[1].author.tag}
     profileUser={paintings[1].author.url}
