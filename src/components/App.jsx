@@ -7,7 +7,6 @@ import Section from './Section';
 export const App = () => {
   return (
     <div>
-      {/* <PaintingList items={paintings} />     */}
       <Section title="Top">
         <PaintingList items={paintings} /> 
       </Section>
